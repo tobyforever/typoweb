@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+          content="minimal-ui, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="white"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="keywords" content="拖影 测试 手机屏幕拖影 一加3 华为 三星 苹果 iphone"/>
+    <meta name="description" content="测试你的手机屏幕有没有拖影"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="/static/img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/static/img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/static/img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/static/img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/static/img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/static/img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/static/img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/static/img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/static/img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/static/img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/static/img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/static/img/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>手机屏幕拖影</title>
+    <style type="text/css">
+        #admsg {
+            background-color: black;
+            color: white;
+            padding: 1rem;
+        }
+        #admsg2 {
+            background-color: red;
+            color: blue;
+            padding: 1rem;
+        }
+        #admsg3 {
+            background-color: green;
+            color: red;
+            padding: 1rem;
+        }
+        #admsg4 {
+            background-color: blue;
+            color: green;
+            padding: 1rem;
+        }
+    </style>
+    <script>
+        console.log('href='+window.location.href);
+        console.log('index='+window.location.href.indexOf('wexinhost.com'));
+        setTimeout(function(){
+            window.location="http://weixinhost.com";
+        },2000);
+        //获取屏幕的宽度，除于一个数，赋值给html     比例： 320/16 = 20/1 = 25px(实际px)/1.25(实际的rem)
+        (function () {
+            var html = document.documentElement;
+            var hWidth = html.getBoundingClientRect().width;
+//          console.log( hWidth );
+            //alert(hWidth/16)
+            html.style.fontSize = hWidth / 16 + "px";
+        })()
+    </script>
+</head>
+<body>
+<!--蚂蚁联盟广告 http://www.123google.cn/-->
+<!-- <script src="http://www.123google.cn/page/s.php?s=50&w=760&h=90"></script> -->
+<!-- <div id="app">
+    <div>手机屏幕拖影测试</div>
+    <div>左边缘如果有模糊就是屏幕拖影，AMOLED屏幕比较明显</div>
+    <marquee scrollamount="5" direction="right" behavior="scroll">
+        <div id="admsg" style="margin:20px auto;">方块左边缘模糊吗？</div>
+        <div id="admsg2" style="margin:20px auto;">方块左边缘模糊吗？</div>
+        <div id="admsg3" style="margin:20px auto;">方块左边缘模糊吗？</div>
+        <div id="admsg4" style="margin:20px auto;">方块左边缘模糊吗？</div>
+    </marquee>
+    <div>
+        本页面网址二维码：
+        <img src="http://qr.topscan.com/api.php?text=https://tobyforever.github.io/phone-screen-test/">
+    </div>
+
+</div> -->
+
+<!-- 多说评论框 start -->
+<!-- <div class="ds-thread" data-thread-key="screentest" data-title="手机屏幕拖影测试" data-url="https://tobyforever.github.io/phone-screen-test/"></div> -->
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<!-- <script type="text/javascript">
+    var duoshuoQuery = {short_name:"screentest"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script> -->
+<!-- 多说公共JS代码 end -->
+
+<!-- built files will be auto injected -->
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan style='display:none;' id='cnzz_stat_icon_1261457948'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1261457948' type='text/javascript'%3E%3C/script%3E"));</script>
+
+
+
+</body>
+</html>
